@@ -11959,7 +11959,38 @@ fieldset:disabled .btn {
   }
 }
 
+.card:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+  background-color: aquamarine;
+  -webkit-transition-delay: 400ms;
+          transition-delay: 400ms;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
 #condon {
-  margin-top: 2.4rem;
+  margin-top: 5rem;
+  color: white;
+}
+
+@media (max-width: 991.98px) {
+  #condon {
+    height: 69rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #condon {
+    height: 36rem;
+  }
 }
 /*# sourceMappingURL=Custom.css.map */

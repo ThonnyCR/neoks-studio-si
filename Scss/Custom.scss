@@ -9,6 +9,32 @@
 
 // Then add additional custom code here
 
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.6);
+    background-color: aquamarine;
+    transition-delay:400ms;
+    transition-property: box-shadow;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+}
+
 #condon{
-    margin-top: 2.4rem;
+    margin-top: 5rem;
+    color: white;
+}
+
+@include media-breakpoint-down(lg) {
+    #condon{
+        height: 69rem;
+    }
+
+}
+
+@include media-breakpoint-up(lg) {
+    #condon{
+        height: 36rem;
+    }
+
 }
